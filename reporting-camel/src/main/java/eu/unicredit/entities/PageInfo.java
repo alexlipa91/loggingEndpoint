@@ -1,4 +1,4 @@
-package entities;
+package eu.unicredit.entities;
 
 /**
  * Created by c314668 on 19/01/17.
@@ -8,9 +8,9 @@ public class PageInfo {
 
     String page;
 
-    Long meanTime;
+    Time time;
 
-    String workflow;
+    String url;
 
     public String getCategory() {
         return category;
@@ -28,23 +28,15 @@ public class PageInfo {
         this.page = page;
     }
 
-    public Long getMeanTime() {
-        return meanTime;
-    }
+    public Time getTime() {return time;}
 
-    public void setMeanTime(Long meanTime) {
-        this.meanTime = meanTime;
-    }
+    public void setTime(Time time) {this.time = time;    }
 
-    public String getWorkflow() {
-        return workflow;
-    }
+    public String getUrl() {return url;}
 
-    public void setWorkflow(String workflow) {
-        this.workflow = workflow;
-    }
+    public void setUrl(String url) {this.url = url;}
 
     public String toString() {
-        return category+","+page+","+meanTime.toString()+","+workflow;
+        return category+","+page+","+url+","+time.toString();
     }
 }

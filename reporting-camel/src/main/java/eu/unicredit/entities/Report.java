@@ -1,4 +1,4 @@
-package entities;
+package eu.unicredit.entities;
 
 /**
  * Created by c314668 on 19/01/17.
