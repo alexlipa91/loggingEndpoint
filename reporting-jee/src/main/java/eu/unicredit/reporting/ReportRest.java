@@ -29,12 +29,12 @@ public class ReportRest {
 
         PageInfo[] pageInfos = report.getPageInfo();
         for(PageInfo p : pageInfos)
-            logger.info("PAGE_INFO "+p.toString());
+            logger.info("PAGE_INFO "+report.getClient().toString()+" - "+p.toString());
         sb.append("Stored ").append(pageInfos.length).append(" page analytics\n");
 
         RestInfo[] restInfos = report.getRestInfo();
         for(RestInfo r : restInfos)
-            logger.info("REST_INFO "+r.toString());
+            logger.info("REST_INFO "+report.getClient().toString()+" - "+r.toString());
         sb.append("Stored ").append(restInfos.length).append(" rest analytics\n");
 
         return Response.status(200).entity(sb.toString()).build();
