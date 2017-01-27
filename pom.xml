@@ -7,9 +7,10 @@
     <groupId>eu.unicredit</groupId>
     <artifactId>reporting-webapp</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <modules>
         <module>reporting-jee</module>
+        <module>reporting-camel</module>
     </modules>
 
     <properties>

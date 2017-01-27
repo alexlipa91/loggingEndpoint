@@ -7,6 +7,6 @@ package eu.unicredit.reporting;
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
-@ApplicationPath("/services")
+@ApplicationPath("/")
 public class ReportingApplication extends Application {
 }
